@@ -1,0 +1,128 @@
+
+
+body{
+    background-color: aquamarine;
+    margin: 12px auto;
+    width: 1000px;
+    
+}
+
+canvas {
+    cursor:crosshair;
+}
+
+#canvas{
+    /* width: 100%; */
+    max-width: 1000px;
+}
+
+#selectItem{
+    top:10px;
+    cursor:crosshair;
+    left: 200px;
+    background-color: aliceblue;
+}
+
+#link{
+    display: none;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.canvasSection{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#guardar{
+    justify-content: center;
+    display: flex;
+    margin-top: 12px;
+    box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+    background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color:#b8e356;
+    border-radius:6px;
+    border:1px solid #83c41a;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:8px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #86ae47;
+}
+
+.butoes:disabled{
+    background: gray;
+}
+
+
+.butoes{
+    display: inline-block;
+    margin-bottom: 8px;
+    box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+    background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color:#b8e356;
+    border-radius:6px;
+    border:1px solid #83c41a;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:4px 10px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #86ae47; 
+}
+
+
+#inserirImagem, #input, #mudaCor 
+{
+    /* display: none; */
+    width: 0%;
+    visibility: hidden;
+    /* box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+    background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color:#b8e356;
+    border-radius:6px;
+    border:1px solid #83c41a;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    /* font-size:15px; */
+    /* font-weight:bold;
+    padding:4px 10px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #86ae47; */ 
+}
+
+
+  
+#guardar:hover, #inserirImagem:hover, #inserirTexto:hover, #input:hover, #mudaCor:hover{
+    background-color: rgb(17, 82, 147);
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    
+  }
+
+
+
+
+/*
+body {
+     margin:0;
+     border: none;
+     padding: 0;
+ }*/
+
+/*
+section {
+    position: relative;
+    left: 100px;
+}*/

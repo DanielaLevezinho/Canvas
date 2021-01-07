@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Photos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/FotoPrint_manager.js"></script>
+    <script src="js/FotoPrint.js"></script>
+    <script src="js/DrawingObjects.js"></script>
+
+
+</head>
+<body>
+
+<section id="menu">
+    <div id="buttonContainer">
+
+        <a id="link"></a> 
+        
+        <div>
+            <button class="butoes" id="inserirTexto" onclick="insertText();"> Inserir Texto</button>
+        </div>
+        
+        <div>
+            <label for="inserirImagem" class="butoes">Procurar</label>  
+            <input id="inserirImagem" type="file" name="imagem" onchange="insertImage(this)"></input>
+        </div>
+        
+        <div>
+            <label for="input" class="butoes">Mudar cor de fundo</label>
+            <input id="input" value="#FFFFFF" type="color" onchange="changeBackgroundColor(this.value);"></input>
+        </div>
+        
+        <div>
+            <label for="mudaCor" class="butoes">Mudar cor de imagem</label>
+            <input id="mudaCor" value="#FFFF00" type="color" onchange="changeObjectColor(this.value);"></input>
+        </div>
+
+        <div>
+            <button id="toggleRange" class="butoes" disabled>Mudar tamanho</button>
+        </div>
+        
+    </div>
+
+    <canvas id ="selectItem" width="660" height="180.4">
+    </canvas>
+
+</section>
+
+<section class="canvasSection">
+    <canvas id="canvas" width="1000" height="400">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+    <button id="guardar" onclick="saveasimage();"> Guardar Imagem </button>
+</section>
+
+<section>
+    <script> window.onload = main(); </script>
+</section>
+
+<footer></footer>
+</body>
+</html>
